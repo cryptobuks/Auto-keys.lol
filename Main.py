@@ -4,6 +4,7 @@ import sys
 import os
 import re
 
+pages = 0
 
 try:
     while 5 > 1:
@@ -19,5 +20,7 @@ try:
                     with open('ValidWallets', 'a') as appendFile:
                         appendFile.write('{} btc\n'.format(str(i)))
                         appendFile.write('{}\n'.format(webUrl.geturl()))
+        pages = pages + 1
+        print("Pages read: " + str(pages))
 except TimeoutError:
-    os.execl(sys.executable, sys.executable, * sys.argv)
+    os.execv(sys.executable, ['python'] + sys.argv)
