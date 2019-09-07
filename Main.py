@@ -5,6 +5,8 @@ import os
 import re
 
 pages = 0
+print("Loaded Auto keys.lol VERSION 1.1")
+print("Started search...")
 
 try:
     while 5 > 1:
@@ -17,7 +19,7 @@ try:
                 if float(i) > 0:
                     print(str(i) + " btc")
                     print(webUrl.geturl())
-                    with open('ValidWallets', 'a') as appendFile:
+                    with open('ValidWallets.txt', 'a') as appendFile:
                         appendFile.write('{} btc\n'.format(str(i)))
                         appendFile.write('{}\n'.format(webUrl.geturl()))
         pages = pages + 1
