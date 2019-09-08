@@ -5,7 +5,7 @@ import os
 import re
 
 pages = 0
-print("Loaded Auto keys.lol VERSION 1.2")
+print("Loaded Auto keys.lol CMD VERSION 1.2")
 print("Started search...")
 
 try:
