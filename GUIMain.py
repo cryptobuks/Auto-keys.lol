@@ -5,7 +5,7 @@ from tkinter import *
 import threading
 running = False
 pages = 0
-print("Close this windows to close the program.")
+print("Close this window to close the program.")
 
 
 def run():
